@@ -1,0 +1,228 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\URLDownload.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\URLDownload.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 265, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About URLDownload"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "URLDownload Version 1.0 (Dec 23, 1999)",IDC_STATIC,40,
+                    10,160,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999 by Michael Dunn\nmdunn@inreach.com\nhttp://home.inreach.com/mdunn/code/",
+                    IDC_STATIC,40,25,160,32
+    DEFPUSHBUTTON   "OK",IDOK,208,7,50,14,WS_GROUP
+END
+
+IDD_URLDOWNLOAD_DIALOG DIALOGEX 0, 0, 320, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Downloading files with IE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter &URL of a file to download:",IDC_STATIC,7,7,200,8
+    EDITTEXT        IDC_URL,7,24,232,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Enter the &filename to save the file as:",IDC_STATIC,7,
+                    48,200,8
+    EDITTEXT        IDC_FILE,7,65,232,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Us&e time limit:",IDC_TIMEOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,7,90,70,10
+    EDITTEXT        IDC_TIMEOUT_SECS,88,87,30,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_DISABLED | WS_GROUP,119,87,10,14
+    LTEXT           "seconds",IDC_STATIC,129,90,46,8
+    GROUPBOX        "Download progress",IDC_STATIC,7,111,306,67,WS_GROUP
+    LTEXT           "Status from IE:",IDC_STATIC,14,125,60,8
+    LTEXT           "",IDC_IE_STATUS,81,125,225,8
+    LTEXT           "Custom status:",IDC_STATIC,14,142,60,8
+    LTEXT           "Static",IDC_CUSTOM_STATUS,81,142,225,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER | WS_GROUP,14,160,292,10
+    DEFPUSHBUTTON   "&Start",IDC_START,263,7,50,14,WS_GROUP
+    PUSHBUTTON      "S&top",IDC_STOP,263,24,50,14,WS_DISABLED
+    PUSHBUTTON      "E&xit",IDCANCEL,263,41,50,14
+    PUSHBUTTON      "&About",IDC_ABOUT,263,58,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "URLDownload MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "URLDownload\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "URLDownload.EXE\0"
+            VALUE "ProductName", "URLDownload Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_URLDOWNLOAD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About URLDownload..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\URLDownload.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
