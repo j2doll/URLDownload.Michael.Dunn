@@ -1,9 +1,7 @@
+# .gitignore
 
 *.vcxproj.filters
 *.filters
-
-DebugU/
-ReleaseU/
 
 # Prerequisites
 *.d
@@ -59,6 +57,18 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+URLDownload/[Dd]ebug/
+URLDownload/[Rr]elease/
+URLDownload/x64
+URLDownload/x86
+URLDownload/[Dd]ebug[Uu]/
+URLDownload/[Rr]elease[Uu]/
+URLDownload/DebugU/
+URLDownload/ReleaseU/
+URLDownload/x64/
+"URLDownload/Unicode Release/"
+"URLDownload/Unicode Debug/"
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
