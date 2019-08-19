@@ -79,9 +79,9 @@ CAPTION "About URLDownload"
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
-    LTEXT           "URLDownload Version 1.0 (Dec 23, 1999)",IDC_STATIC,40,
+    LTEXT           "URLDownload (2019)",IDC_STATIC,40,
                     10,160,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 1999 by Michael Dunn\nmdunn@inreach.com\nhttp://home.inreach.com/mdunn/code/",
+    LTEXT           "https://github.com/j2doll/URLDownload.Michael.Dunn",
                     IDC_STATIC,40,25,160,32
     DEFPUSHBUTTON   "OK",IDOK,208,7,50,14,WS_GROUP
 END
@@ -144,13 +144,13 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "\0"
             VALUE "FileDescription", "URLDownload MFC Application\0"
-            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
             VALUE "InternalName", "URLDownload\0"
-            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalCopyright", "Copyright (C) 2019\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "URLDownload.EXE\0"
             VALUE "ProductName", "URLDownload Application\0"
-            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
         END
     END
     BLOCK "VarFileInfo"
